@@ -1,17 +1,52 @@
 .banner {
   padding: rem(200) 0;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
 
   color: map-get($theme-colors, 'white');
+  text-align: center;
+
+  background-position: center;
+  background-size: cover;
 
   &_quitar {
     background-image: url(../images/banner.png);
   }
 
   &-form {
+    justify-content: space-between;
     max-width: rem(570);
     margin: 0 auto;
+
+    &__input {
+      box-sizing: border-box;
+      min-width: rem(270);
+      height: rem(50);
+      padding: 0 rem(20);
+
+      color: map-get($theme-colors, 'white');
+      font-weight: bold;
+      font-size: rem(14);
+
+      background: none;
+      border: rem(2) solid map-get($theme-colors, 'dark-gray');
+      border-radius: rem(3);
+    }
+
+    &__submit {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.btn {
+  padding: rem(20) rem(30);
+
+  color: map-get($theme-colors, 'white');
+  font-size: rem(13.3);
+
+  border: none;
+  border-radius: rem(5);
+
+  &_green {
+    background: map-get($theme-colors, 'green');
   }
 }
