@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  line-height: 1.5; }
+
+@media (max-width: 415px) {
+  html {
+    font-size: 3.86473vw; } }
+
+@media (min-width: 441px) and (max-width: 1440px) {
+  html {
+    font-size: 1.11111vw; } }
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 16px; } }
+
+/*# sourceMappingURL=style.css.map */

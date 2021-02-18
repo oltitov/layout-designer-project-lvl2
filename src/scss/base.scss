@@ -1,0 +1,24 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  color: map-get($theme-colors, 'base-color');
+
+  font-family: $font;
+  line-height: $line-height;
+}
+
+html {
+  @include mobile {
+    font-size: (100/25.875) + vw;
+  }
+
+  @media (min-width: 441px) and (max-width: 1440px) {
+    font-size: (100/90) + vw;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 16px;
+  }
+}
