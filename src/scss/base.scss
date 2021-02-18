@@ -13,10 +13,10 @@ body {
 
 html {
   @include mobile {
-    font-size: (100/25.875) + vw;
+    font-size: (100/37.5) + vw;
   }
 
-  @media (min-width: 441px) and (max-width: 1201px) {
+  @media (min-width: 601px) and (max-width: 1201px) {
     font-size: (100/90) + vw;
   }
 
@@ -49,11 +49,18 @@ h2,
 
 h1,
 .h1 {
-  font-size: rem(60);
-  line-height: rem(90);
+  font-size: rem(30);
+
+  @include desktop {
+    font-size: rem(60);
+  }
 }
 
 h2,
 .h2 {
-  font-size: rem(38);
+  font-size: rem(18);
+
+  @include desktop {
+    font-size: rem(38);
+  }
 }

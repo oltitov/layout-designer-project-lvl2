@@ -12,11 +12,20 @@
 
   &__logo {
     margin-right: rem(88);
+
+    @include mobile {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
   }
 
   &-form {
     width: rem(248);
     margin-left: auto;
+
+    @include mobile {
+      width: 100%;
+    }
 
     &__input {
       box-sizing: border-box;
@@ -47,10 +56,19 @@
 .nav {
   margin: auto 0;
 
+  @include mobile {
+    margin-bottom: 1rem;
+  }
+
   &__item {
     margin-right: rem(24);
 
     color: map-get($theme-colors, 'dark-gray');
+
+    @include mobile {
+      display: block;
+      width: 100%;
+    }
 
     &_active {
       color: inherit;
