@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Hexlet project: Music box",
   "scripts": {
+    "start": "npx gulp",
     "lint": "npx stylelint ./src/scss/**/*.scss",
     "lint:fix": "npx stylelint ./src/scss/**/*.scss --fix"
   },

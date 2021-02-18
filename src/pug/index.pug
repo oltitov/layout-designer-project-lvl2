@@ -1,4 +1,17 @@
 extends ./extends/layout.pug
 
+block banner
+  #page-description.banner.banner_quitar
+    .container
+      h1.h1.m-0 Онлайн музыка где угодно
+      h2.h2.m-0 без ограничений
+      p 
+        | Получите доступ всего за несколько шагов. 
+        | Заполните форму ниже и откройте мир музыки
+      form.banner-form.flex(action="#") 
+        input.banner-form__input(type="text", placeholder="Имя")
+        input.banner-form__input(type="email", placeholder="Email")
+        button.btn(type="submit") Получить доступ
+
 block main
   | Test page index

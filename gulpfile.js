@@ -27,7 +27,8 @@ const scss = () => {
   return src('./src/scss/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
-      includePaths: ['node_modules']
+      includePaths: ['node_modules'],
+      outputStyle: 'compressed'
     }).on('error', sass.logError))
     .pipe(sourcemaps.write('./'))
     .pipe(dest('./src/css/'))

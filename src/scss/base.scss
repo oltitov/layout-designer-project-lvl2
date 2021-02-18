@@ -7,6 +7,8 @@ body {
 
   font-family: $font;
   line-height: $line-height;
+
+  background: #000;
 }
 
 html {
@@ -14,11 +16,38 @@ html {
     font-size: (100/25.875) + vw;
   }
 
-  @media (min-width: 441px) and (max-width: 1440px) {
+  @media (min-width: 441px) and (max-width: 1201px) {
     font-size: (100/90) + vw;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1200px) {
     font-size: 16px;
   }
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1,
+.h1 {
+  font-size: rem(60);
+}
+
+h2,
+.h2 {
+  font-size: rem(38);
 }

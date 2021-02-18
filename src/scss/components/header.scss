@@ -1,0 +1,57 @@
+.header {
+  position: absolute;
+  top: rem(25);
+  left: 0;
+  right: 0;
+
+  font-size: rem(11);
+  font-weight: 700;
+  color: map-get($theme-colors, 'white');
+  text-transform: uppercase;
+
+  &__logo {
+    margin-right: rem(88);
+  }
+
+  &-form {
+    margin-left: auto;
+    max-width: rem(248);
+
+    &__input {
+      height: rem(24);
+      border-radius: rem(50);
+      padding: 0 rem(10);
+      font-size: rem(13.3);
+      background: map-get($theme-colors, 'dark');
+      color: inherit;
+      border: none;
+
+      &::placeholder {
+        color: inherit;
+        font-size: inherit;
+      }
+    }
+  }
+}
+
+.logo {
+  height: rem(24);
+
+  padding: 0 0 0 rem(40);
+  background: url('../images/logo.svg') no-repeat left center/auto 100%;
+
+  color: inherit;
+}
+
+.nav {
+  margin: auto 0;
+
+  &__item {
+    color: map-get($theme-colors, 'dark-gray');;
+    margin-right: rem(24);
+
+    &_active {
+      color: inherit;
+    }
+  }
+}
