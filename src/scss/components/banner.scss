@@ -45,6 +45,8 @@
 
   border: none;
   border-radius: rem(5);
+  border: 1px solid transparent;
+  text-transform: uppercase;
 
   &_green {
     background: map-get($theme-colors, 'green');

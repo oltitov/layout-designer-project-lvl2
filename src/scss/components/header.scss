@@ -15,10 +15,12 @@
   }
 
   &-form {
-    max-width: rem(248);
+    width: rem(248);
     margin-left: auto;
 
     &__input {
+      box-sizing: border-box;
+      width: 100%;
       height: rem(24);
       padding: 0 rem(10);
 
